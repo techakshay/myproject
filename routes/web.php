@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('food/create', 'FoodController@create');
+//Route::get('food/store', 'FoodController@store');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/food', 'FoodController@store')->name('food.store');
+Route::get('/food/address', 'FoodController@address')->name('food.address');
