@@ -22,6 +22,7 @@
     <link href="{{ asset('css/selectize.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/selectize.bootstrap3.css') }}" rel="stylesheet" />
 
+
     @yield('dyna_styles')
     @yield('styles')
     <style>

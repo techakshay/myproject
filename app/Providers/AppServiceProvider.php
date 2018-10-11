@@ -24,8 +24,8 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191);
         //Items::creating([$this , 'user_add']);
         //Customer::creating([$this , 'user_add']);
-        Stocks::creating([$this , 'user_add']);
-        Item::creating([$this , 'user_add']);
+        //Stocks::creating([$this , 'user_add']);
+        //Item::creating([$this , 'user_add']);
         //Bills::creating([$this , 'user_add']);
         //Vendor::creating([$this , 'user_add']);
 
