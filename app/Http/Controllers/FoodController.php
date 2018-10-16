@@ -33,40 +33,62 @@ class FoodController extends CRUDController
     }
     public function store(Request $request)
     {
-        $this->init();
+        foreach ($request['data'] as $data) {
 
-        $request = request()->all();
-        $request = $this->store_before($request);
+            $abc[] = $data;
 
-        $model = "App\\" . $this->model;
-        $view = $this->model;
-
-        $data = request()->all();
-
-        $data = $model::correct_data($data);
-
-
-        //return $model::required_fields();
-        $this->validate(request(), $model::required_fields());
-
-        if(array_key_exists('password', $data)){
-            $data['password'] = Hash::make($data['password']);
+            /*$name = $data['value'];
+            $age = $data['age'];
+            $relation = $data['relation'];
+            $age = $data['age'];
+            $aadhar_no = $data['aadhar_no'];*/
         }
-        //$data = $this->save_before($data);
-        unset($data['submit']);
-        $data = $model::create($data);
-        /*if($this->redirect){
+        //return $abc;
+        $no = 1;
+        foreach ($abc as $data) {
+//return $data['quantity'];
 
-            return redirect($this->redirect);
-        }*/
-        /* return $data;*/
-        //$this->redirect = str_replace('arg_id', $data['id'], $this->redirect);
+            //Family::where('name',$data['value'])->where('age',$data['age'])->where('relation',$data['relation']);
+                $food = new Food();
+                $food->food_name = $data['value'];
+                $food->area = $data['address'];
+                $food->quantity = $data['quantity'];
+            $food->save();
+                session()->flash('success', "Items Added Successfully");
+                //return redirect('/services');
+            }
+         /*   $request = $this->store_before($request);
+
+            $model = "App\\" . $this->model;
+            $view = $this->model;
+
+            $data = request()->all();
+
+            $data = $model::correct_data($data);
 
 
-        //return $this->store_after($request, $data, $view);
-        return redirect('food/address');
+            //return $model::required_fields();
+            $this->validate(request(), $model::required_fields());
 
-    }
+            if (array_key_exists('password', $data)) {
+                $data['password'] = Hash::make($data['password']);
+            }
+            //$data = $this->save_before($data);
+            unset($data['submit']);
+            $data = $model::create($data);
+            /*if($this->redirect){
+
+                return redirect($this->redirect);
+            }*/
+            /* return $data;*/
+            //$this->redirect = str_replace('arg_id', $data['id'], $this->redirect);
+
+
+            //return $this->store_after($request, $data, $view);
+            //return redirect('food/address');
+
+
+        }
 
 
 
@@ -114,13 +136,19 @@ class FoodController extends CRUDController
             $food->address = $data->address;
             $food->phone_no = $data->phone_no;
             $food->save();
-            return Redirect::back();
+            session()->flash('success', "Items Added Successfully");
+            return \redirect('/');
+            //return Redirect::back();
 
         }
         public function create()
         {
             $user_id = auth()->user()->id;
         return view('food.create',compact('user_id'));
+        }
+        public function thankyou(){
+
+        return view('food.thankyou');
         }
 
 }

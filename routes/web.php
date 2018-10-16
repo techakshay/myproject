@@ -23,3 +23,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/food', 'FoodController@store')->name('food.store');
 Route::get('/food/address', 'FoodController@address')->name('food.address');
 Route::post('/address/store', 'FoodController@address_store')->name('address.store');
+Route::get('/thankyou', 'FoodController@thankyou')->name('thankyou');
+Route::get('/animation', 'FunController@animation')->name('thankyou');

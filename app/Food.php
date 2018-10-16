@@ -28,7 +28,7 @@ class Food extends CRUDModel
                 "required" => true
             ],
 
-            'Quantity' => [
+            'quantity' => [
                 "type" => "text",
                 "label" => "Quantity",
                 "placeholder" => "",

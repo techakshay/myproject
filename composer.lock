@@ -750,16 +750,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.8",
+            "version": "v5.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "763b64a43ebb6042e463aab4214d4cc9722147be"
+                "reference": "172f69f86bb86e107fb9fafff293b4b01291cf05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/763b64a43ebb6042e463aab4214d4cc9722147be",
-                "reference": "763b64a43ebb6042e463aab4214d4cc9722147be",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/172f69f86bb86e107fb9fafff293b4b01291cf05",
+                "reference": "172f69f86bb86e107fb9fafff293b4b01291cf05",
                 "shasum": ""
             },
             "require": {
@@ -888,7 +888,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-10-04T14:47:20+00:00"
+            "time": "2018-10-09T13:28:28+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1222,16 +1222,16 @@
         },
         {
             "name": "maatwebsite/excel",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
-                "reference": "7f2cdb5ac02401460c52e09ad64cdcd91c97732f"
+                "reference": "a80179c3f33d06fc0d7f22891d6aae4bb083f8c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/7f2cdb5ac02401460c52e09ad64cdcd91c97732f",
-                "reference": "7f2cdb5ac02401460c52e09ad64cdcd91c97732f",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/a80179c3f33d06fc0d7f22891d6aae4bb083f8c3",
+                "reference": "a80179c3f33d06fc0d7f22891d6aae4bb083f8c3",
                 "shasum": ""
             },
             "require": {
@@ -1284,7 +1284,7 @@
                 "php",
                 "phpspreadsheet"
             ],
-            "time": "2018-10-04T09:00:36+00:00"
+            "time": "2018-10-11T09:21:58+00:00"
         },
         {
             "name": "markbaker/complex",
@@ -1577,16 +1577,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.0.4",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c"
+                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fa6ee28600d21d49b2b4e1006b48426cec8e579c",
-                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d0230c5c77a7e3cfa69446febf340978540958c0",
+                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0",
                 "shasum": ""
             },
             "require": {
@@ -1602,7 +1602,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -1624,7 +1624,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-09-18T07:03:24+00:00"
+            "time": "2018-10-10T09:24:14+00:00"
         },
         {
             "name": "opis/closure",
@@ -3253,16 +3253,16 @@
         },
         {
             "name": "yajra/laravel-datatables-buttons",
-            "version": "v4.3.0",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables-buttons.git",
-                "reference": "3a4844d609bc086b9ce2ea2e20d8f62370ab3bbc"
+                "reference": "649f0f6c02b391e349cff3f186aa88b61fb0cdd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables-buttons/zipball/3a4844d609bc086b9ce2ea2e20d8f62370ab3bbc",
-                "reference": "3a4844d609bc086b9ce2ea2e20d8f62370ab3bbc",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-buttons/zipball/649f0f6c02b391e349cff3f186aa88b61fb0cdd0",
+                "reference": "649f0f6c02b391e349cff3f186aa88b61fb0cdd0",
                 "shasum": ""
             },
             "require": {
@@ -3313,7 +3313,7 @@
                 "jquery",
                 "laravel"
             ],
-            "time": "2018-09-25T05:03:12+00:00"
+            "time": "2018-10-06T02:23:34+00:00"
         },
         {
             "name": "yajra/laravel-datatables-fractal",

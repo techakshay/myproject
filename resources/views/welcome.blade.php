@@ -25,6 +25,7 @@
        class="w3-bar-item w3-button">Close Menu</a>
     <a href="food/create" onclick="w3_close()" class="w3-bar-item w3-button">Order Food</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="/animation" onclick="w3_close()" class="w3-bar-item w3-button">Animation</a>
 </nav>
 
 <!-- Top menu -->
